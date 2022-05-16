@@ -1,0 +1,93 @@
+// Importing main SCSS modules 
+@use "Modules/variables";
+
+/* Importing CSS Modules */
+@import url("/modules/Animations.css");
+
+// Reseting Default browser Style
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: variables.$FontSizePX;
+}
+
+
+body {
+    background-color: variables.$Black;
+    margin: variables.$MarginWidthP;
+    margin-top: 2%;
+}
+
+header {
+    text-align: center;
+    color: variables.$DeepGreen;
+    animation: Glow 3s ease-in infinite;
+    line-height: 1.5;
+    h1 {
+        font-size: variables.$Title;
+    }
+
+    h4 {
+        font-size: variables.$SubTitle;
+    }
+
+}
+
+main {
+
+    .input {
+        margin-top: 8%;
+        margin-bottom: 5%;
+
+        label {
+            color: variables.$White;
+        }
+
+        textarea {
+            width: 80%;
+            height: 50vh;
+            background-color: variables.$Black;
+            color: variables.$White;
+            overflow: scroll;
+            resize: none;
+            border-color: variables.$NeonPurple;
+            padding: variables.$PaddingWidthP;
+        }
+
+        textarea:focus {
+            outline: none;
+            color: variables.$DeepGreen;
+        }
+
+        button {
+            width: 20%;
+            height: 15vh;
+            margin-top: 2%;
+            padding: 2px;
+            border: none;
+            background-color: variables.$Black;
+            outline: variables.$OutlinePX variables.$NeonPink solid;
+            color: variables.$DeepGreen;
+            font-size: variables.$FontSize;
+            font-weight: 700;
+            transition: outline 600ms ease-in;
+        }
+
+        button:hover {
+            outline: variables.$OutlinePX variables.$NeonPurple solid;
+            cursor: pointer;
+        }
+    }
+    
+    .output {
+        color: variables.$DeepGreen;
+        outline: variables.$OutlinePX variables.$DeepGreen solid;
+        padding: 15px;
+        line-height: 1.5;
+
+        #words, #sChars,#chars,#status {
+            color: variables.$Blue;
+        }
+    }
+}

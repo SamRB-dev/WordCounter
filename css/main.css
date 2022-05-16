@@ -1,0 +1,76 @@
+/* Importing CSS Modules */
+@import url("/modules/Animations.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  background-color: #111211;
+  margin: 5%;
+  margin-top: 2%;
+}
+
+header {
+  text-align: center;
+  color: #00ff00;
+  -webkit-animation: Glow 3s ease-in infinite;
+          animation: Glow 3s ease-in infinite;
+  line-height: 1.5;
+}
+header h1 {
+  font-size: 2rem;
+}
+header h4 {
+  font-size: 0.9rem;
+}
+
+main .input {
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+main .input label {
+  color: #ffffff;
+}
+main .input textarea {
+  width: 80%;
+  height: 50vh;
+  background-color: #111211;
+  color: #ffffff;
+  overflow: scroll;
+  resize: none;
+  border-color: #6E0DD0;
+  padding: 4%;
+}
+main .input textarea:focus {
+  outline: none;
+  color: #00ff00;
+}
+main .input button {
+  width: 20%;
+  height: 15vh;
+  margin-top: 2%;
+  padding: 2px;
+  border: none;
+  background-color: #111211;
+  outline: 5px #FF0099 solid;
+  color: #00ff00;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: outline 600ms ease-in;
+}
+main .input button:hover {
+  outline: 5px #6E0DD0 solid;
+  cursor: pointer;
+}
+main .output {
+  color: #00ff00;
+  outline: 5px #00ff00 solid;
+  padding: 15px;
+  line-height: 1.5;
+}
+main .output #words, main .output #sChars, main .output #chars, main .output #status {
+  color: #000cfe;
+}/*# sourceMappingURL=main.css.map */
